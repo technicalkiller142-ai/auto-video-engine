@@ -5,6 +5,8 @@ import shutil
 from pathlib import Path
 from manim import *
 
+# REQUIREMENTS: manim
+
 # Set up Manim configuration
 config.pixel_width = 1920  # 1080p
 config.pixel_height = 1080
@@ -17,23 +19,18 @@ class PipelineScene(Scene):
         title = Text("Auto Video Pipeline Ready!", font_size=48, color=BLUE_D).to_edge(UP)
         self.play(Write(title))
 
-        # Create initial glowing blue circle
-        circle = Circle(radius=1, color=BLUE, stroke_width=3).set_glow(
-            glow_intensity=0.8, glow_radius=0.2
-        )
+        # Create initial blue circle with standard styling
+        circle = Circle(radius=1, color=BLUE, stroke_width=6).set_fill(BLUE, opacity=0.3)
 
-        # Create target red square
-        square = Square(side_length=1.5, color=RED, stroke_width=3).next_to(circle, RIGHT)
+        # Create target red square with standard styling
+        square = Square(side_length=1.5, color=RED, stroke_width=6).set_fill(RED, opacity=0.3).next_to(circle, RIGHT)
 
         # Animation: Transform circle to square
         self.play(
             Transform(circle, square),
-            circle.animate.set_color(RED),
+            circle.animate.set_color(RED).set_fill(RED, opacity=0.3),
             run_time=5
         )
-
-        # Add glow to square
-        square.set_glow(glow_intensity=0.8, glow_radius=0.2)
 
         # Keep final scene for 1 second
         self.wait(1)
@@ -78,9 +75,7 @@ def main():
         print(f"Manim render failed: {e}")
         return 1
 
-    # Find the actual output file (Manim puts it in a nested directory structure)
-    # Default path: media/videos/render_pipeline/1080p60/raw_render.mp4
-    # But since we set media_dir, it will be relative to that.
+    # Find the actual output file
     rendered_file = None
     for path in output_dir.rglob("raw_render.mp4"):
         rendered_file = path
