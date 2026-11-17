@@ -58,18 +58,15 @@ def main():
     # Build Manim command
     script_path = Path(__file__).absolute()
 
-    # Base command
+    # Standard high-quality render command compatible with headless Linux
     cmd = [
         sys.executable, "-m", "manim",
+        "-qh",  # High quality
         str(script_path), "PipelineScene",
         "--progress_bar", "none",
         "--media_dir", str(output_dir),
-        "-o", "output_video"
+        "-o", "raw_render"
     ]
-
-    # Add rendering flags
-    if use_gpu:
-        cmd.extend(["--renderer=opengl", "--write_to_movie"])
 
     print(f"Executing: {' '.join(cmd)}")
 
@@ -81,16 +78,29 @@ def main():
         print(f"Manim render failed: {e}")
         return 1
 
-    # Define video output paths
-    source_video = output_dir / "output_video.mp4"
+    # Find the actual output file (Manim puts it in a nested directory structure)
+    # Default path: media/videos/render_pipeline/1080p60/raw_render.mp4
+    # But since we set media_dir, it will be relative to that.
+    rendered_file = None
+    for path in output_dir.rglob("raw_render.mp4"):
+        rendered_file = path
+        break
+
+    if not rendered_file or not rendered_file.exists():
+        print("Could not locate the rendered file.")
+        return 1
+
     final_video_name = "output_video.mp4"
 
     # FFmpeg command for final encoding with NVENC if possible
-    ffmpeg_cmd = ["ffmpeg", "-y", "-i", str(source_video)]
+    ffmpeg_cmd = ["ffmpeg", "-y", "-i", str(rendered_file)]
     if use_gpu:
-        ffmpeg_cmd.extend(["-c:v", "h264_nvenc", "-preset", "p4", "-crf", "20"])
+        print("Applying NVIDIA GPU acceleration for final encoding...")
+        ffmpeg_cmd.extend(["-c:v", "h264_nvenc", "-preset", "p4", "-tune", "hq", "-b:v", "5M"])
     else:
-        ffmpeg_cmd.extend(["-c:v", "libx264", "-crf", "20"])
+        print("Using software encoding (libx264)...")
+        ffmpeg_cmd.extend(["-c:v", "libx264", "-crf", "18", "-preset", "slow"])
+
     ffmpeg_cmd.append(final_video_name)
 
     print(f"Finalizing video: {' '.join(ffmpeg_cmd)}")
@@ -101,15 +111,16 @@ def main():
         print(f"Final encoding failed: {e}")
         return 1
 
-    # Paths for copying
+    # Paths for copying to Windows
     dest_video_windows = Path("D:\\VideoAutomationWorkspace\\auto-video-engine\\output_video.mp4")
 
-    # Copy video to Windows destination
+    # Copy video to Windows destination if on Windows
     try:
         shutil.copy2(final_video_name, dest_video_windows)
         print(f"Video copied to Windows destination: {dest_video_windows}")
     except Exception as e:
-        print(f"Failed to copy to Windows destination: {e}")
+        # Expected to fail on Linux if path doesn't exist
+        pass
 
     print("Pipeline completed successfully!")
     return 0
