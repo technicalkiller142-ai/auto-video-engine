@@ -1,0 +1,10 @@
+{
+  "id": "vinu07/autorenderworker",
+  "title": "AutoRenderWorker",
+  "code_file": "autorenderworker.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true"
+}
