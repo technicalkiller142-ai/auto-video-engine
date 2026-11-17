@@ -1,9 +1,32 @@
-# Workspace Rules
+# 6-Stage Director Protocol
 
-These are the strict, unbreakable rules for all future video tasks in this workspace:
+Follow this protocol end-to-end whenever a new `input/song.mp3` and `input/lyrics.txt` are provided.
 
-1. **Clean Code**: `render_pipeline.py` must ONLY contain valid Python and Manim CE v0.18+ `Scene` classes. Never include `subprocess` CLI runners or deprecated flags (like `--leave_progress_bars`, `--write_to_movie`, or `--renderer=opengl`).
-2. **Valid APIs**: Never invent non-existent methods like `.set_glow()`, `.add_glow()`, or use deprecated `ShowCreation`. Always use standard, valid methods like `Create`.
-3. **Safe Framing**: Keep all visual elements strictly inside the safe camera frame (`config.frame_width = 14.2`, `config.frame_height = 8.0`) so nothing ever clips off-screen.
-4. **Standard Text**: Always use `Text(...)` with standard fonts instead of `Tex`/`MathTex` unless explicitly requested, to avoid LaTeX compilation crashes.
-5. **Requirements Tracking**: If any extra Python package is imported, list it on line 1 as `# REQUIREMENTS: pkg1 pkg2`.
+## Stage 0-1: Alignment
+- Set `pipeline_task.json` to `{"mode": "align"}`.
+- Run `python trigger_kaggle.py`.
+- Verify `data/word-timestamps.json`, `data/phrases.json`, and `data/beat-map.json` are downloaded.
+
+## Stage 2: Sync Test
+- Set `pipeline_task.json` to `{"mode": "sync_test"}`.
+- Run `python trigger_kaggle.py`.
+- Deliver `data/sync-test.mp4` locally for verification.
+
+## Stage 3: Creative Direction & Screenplay
+- Analyze lyrics (Hindi/Hinglish/English) and beat-map.
+- Author `data/creative-direction.md` and `data/visual-screenplay.json`.
+- Focus on motivated transitions and semantic visual metaphors.
+
+## Stage 4-5: Sequence Coding & Hero Proof
+- Code custom Remotion sequences in `video/src/sequences/`.
+- Render a 5-15s `"hero-proof"` clip via `trigger_kaggle.py` with `pipeline_task.json` mode `"render"`.
+
+## Stage 6: Full Render
+- Once approved, render the full song into `output_video.mp4` locally by triggering the pipeline with `mode: "render"` and no frame limits.
+
+---
+## Workspace Rules
+1. Never touch GitHub or Kaggle manually; use `trigger_kaggle.py`.
+2. All scripts must be self-contained and list requirements on line 1.
+3. Keep visual elements inside the safe frame (1080x1920).
+4. Use standard fonts for Devanagari to ensure no breaking.
