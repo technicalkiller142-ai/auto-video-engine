@@ -31,4 +31,4 @@ Follow this protocol end-to-end whenever a new `input/song.mp3` and `input/lyric
 3. Keep visual elements inside the safe frame (1080x1920).
 4. Use standard fonts for Devanagari to ensure no breaking.
 5. **No Network Access in Sandbox**: Whenever a pipeline stage (`align`, `sync_test`, or `render`) is ready to execute on Kaggle, update `pipeline_task.json` and create an empty trigger file `.run_kaggle` in the repo root. The Windows background watcher will detect `.run_kaggle` and orchestrate the full deployment and execution.
-6. **Live Tracking**: Whenever the user asks 'status' or 'track', read `live_status.json` and `data/` and report the exact current progress.
+6. **Live Tracking & Auto-Healing**: Whenever the user asks 'status' or 'track', read `live_status.json` and report exact progress. Whenever `live_status.json` shows `status: "error"`, Claude MUST immediately read `live_status.json` and `kaggle_error_report.json` (if present), diagnose the root cause, patch the offending code/dependencies, and re-create `.run_kaggle` automatically without waiting for the user to debug.
