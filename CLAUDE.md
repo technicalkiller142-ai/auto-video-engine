@@ -30,4 +30,5 @@ Follow this protocol end-to-end whenever a new `input/song.mp3` and `input/lyric
 2. All scripts must be self-contained and list requirements on line 1.
 3. Keep visual elements inside the safe frame (1080x1920).
 4. Use standard fonts for Devanagari to ensure no breaking.
-5. **No Network Access in Sandbox**: Because this environment has no outbound network access, whenever a pipeline stage (`align`, `sync_test`, or `render`) is ready to execute on Kaggle, update `pipeline_task.json` and create an empty trigger file `.run_kaggle` in the repo root. The Windows background watcher (`auto_push.bat` -> `windows_bootstrap_and_run.py`) will immediately detect `.run_kaggle`, install/verify Kaggle CLI, push the kernel, run the GPU job, and download the output automatically.
+5. **No Network Access in Sandbox**: Whenever a pipeline stage (`align`, `sync_test`, or `render`) is ready to execute on Kaggle, update `pipeline_task.json` and create an empty trigger file `.run_kaggle` in the repo root. The Windows background watcher will detect `.run_kaggle` and orchestrate the full deployment and execution.
+6. **Live Tracking**: Whenever the user asks 'status' or 'track', read `live_status.json` and `data/` and report the exact current progress.
