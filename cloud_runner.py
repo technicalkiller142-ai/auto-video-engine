@@ -8,10 +8,11 @@ def main():
         mode = task.get("mode", "align")
         print(f"=== Running Fast Checkpoint Mode: {mode} ===")
         if mode == "align":
-            subprocess.run([sys.executable, "alignment/align_and_beat.py"], check=True)
+            sys.path.insert(0, str(Path("alignment").resolve()))
+            from align_and_beat import run_alignment
+            run_alignment()
             for fn in ["beat-map.json", "word-timestamps.json", "phrases.json"]:
                 src = Path("data") / fn
-
                 if src.exists():
                     shutil.copy2(src, Path("/kaggle/working") / fn)
             print("=== ALIGNMENT COMPLETE ===")
