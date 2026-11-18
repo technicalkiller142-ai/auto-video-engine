@@ -84,14 +84,14 @@ def run_alignment():
             for seg in segments:
                 if seg.words:
                     for w in seg.words:
-                        ass_words.append({"word": w.word.strip(), "start": float(w.start), "end": float(w.end)})
+                        asr_words.append({"word": w.word.strip(), "start": float(w.start), "end": float(w.end)})
         except Exception as e:
             print(f"[WARN] faster-whisper fallback: {e}")
 
         lyrics_lines = []
         if dyrics and dyrics.exists():
             lyrics_lines = [l.strip() for l in dyrics.read_text(encoding="utf-8", errors="ignore").splitlines() if l.strip()]
-        if not lyrics_lines and ass_words:
+        if not lyrics_lines and asr_words:
             lyrics_lines = [" ".join(w["word"] for w in asr_words)]
 
         target_words = []
@@ -101,7 +101,7 @@ def run_alignment():
 
         dur = beat_data.get("duration", 180.0)
         aligned_words = []
-        if len(ass_words) >= max(3, len(target_words) // 4):
+        if len(asr_words) >= max(3, len(target_words) // 4):
             t_norm = [w["word"].lower() for w in target_words]
             a_norm = [w["word"].lower() for w in asr_words]
             matcher = difflib.SequenceMatcher(None, t_norm, a_norm)
