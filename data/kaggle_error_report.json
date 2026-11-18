@@ -1,5 +1,5 @@
 {
   "status": "error",
-  "error": "video/ directory not found!",
-  "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 28, in <module>\n    raise FileNotFoundError(\"video/ directory not found!\")\nFileNotFoundError: video/ directory not found!\n"
+  "error": "Command failed 254: ['npm', 'install', '--legacy-peer-deps', '--silent']\nSTDOUT: \nSTDERR: ",
+  "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 30, in <module>\n    run_cmd([\"npm\", \"install\", \"--legacy-peer-deps\", \"--silent\"], cwd=str(video_dir))\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 7, in run_cmd\n    raise RuntimeError(f\"Command failed {res.returncode}: {cmd}\\nSTDOUT: {res.stdout[-1800:]}\\nSTDERR: {res.stderr[-1800:]}\")\nRuntimeError: Command failed 254: ['npm', 'install', '--legacy-peer-deps', '--silent']\nSTDOUT: \nSTDERR: \n"
 }
