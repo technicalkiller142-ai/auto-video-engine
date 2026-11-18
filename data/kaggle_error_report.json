@@ -1,5 +1,0 @@
-{
-  "status": "error",
-  "error": "name 'ass_words' is not defined",
-  "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 13, in main\n    run_alignment()\n    ~~~~~~~~~~~~~^^\n  File \"/kaggle/working/auto-video-engine/alignment/align_and_beat.py\", line 104, in run_alignment\n    if len(ass_words) >= max(3, len(target_words) // 4):\n           ^^^^^^^^^\nNameError: name 'ass_words' is not defined. Did you mean: 'asr_words'?\n"
-}

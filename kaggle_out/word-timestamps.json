@@ -1,0 +1,1772 @@
+[
+  {
+    "word": "[00:00.00]",
+    "start": 0.0,
+    "end": 0.533,
+    "line_idx": 0
+  },
+  {
+    "word": "Pata",
+    "start": 0.627,
+    "end": 1.161,
+    "line_idx": 0
+  },
+  {
+    "word": "ni",
+    "start": 1.255,
+    "end": 1.788,
+    "line_idx": 0
+  },
+  {
+    "word": "chala,",
+    "start": 1.882,
+    "end": 2.416,
+    "line_idx": 0
+  },
+  {
+    "word": "hum",
+    "start": 2.51,
+    "end": 3.043,
+    "line_idx": 0
+  },
+  {
+    "word": "badal",
+    "start": 3.137,
+    "end": 3.67,
+    "line_idx": 0
+  },
+  {
+    "word": "gaye",
+    "start": 3.764,
+    "end": 4.298,
+    "line_idx": 0
+  },
+  {
+    "word": "[00:16.96]",
+    "start": 4.392,
+    "end": 4.925,
+    "line_idx": 1
+  },
+  {
+    "word": "Karein",
+    "start": 5.019,
+    "end": 5.553,
+    "line_idx": 1
+  },
+  {
+    "word": "ab",
+    "start": 5.647,
+    "end": 6.18,
+    "line_idx": 1
+  },
+  {
+    "word": "kya",
+    "start": 6.274,
+    "end": 6.807,
+    "line_idx": 1
+  },
+  {
+    "word": "hum,",
+    "start": 6.902,
+    "end": 7.435,
+    "line_idx": 1
+  },
+  {
+    "word": "ishq",
+    "start": 7.529,
+    "end": 8.062,
+    "line_idx": 1
+  },
+  {
+    "word": "mein",
+    "start": 8.156,
+    "end": 8.69,
+    "line_idx": 1
+  },
+  {
+    "word": "phisal",
+    "start": 8.784,
+    "end": 9.317,
+    "line_idx": 1
+  },
+  {
+    "word": "gaye",
+    "start": 9.411,
+    "end": 9.944,
+    "line_idx": 1
+  },
+  {
+    "word": "[00:22.80]",
+    "start": 10.039,
+    "end": 10.572,
+    "line_idx": 2
+  },
+  {
+    "word": "Tere",
+    "start": 10.666,
+    "end": 11.199,
+    "line_idx": 2
+  },
+  {
+    "word": "deedar",
+    "start": 11.293,
+    "end": 11.827,
+    "line_idx": 2
+  },
+  {
+    "word": "se",
+    "start": 11.921,
+    "end": 12.454,
+    "line_idx": 2
+  },
+  {
+    "word": "pehle",
+    "start": 12.548,
+    "end": 13.082,
+    "line_idx": 2
+  },
+  {
+    "word": "[00:28.62]",
+    "start": 13.176,
+    "end": 13.709,
+    "line_idx": 3
+  },
+  {
+    "word": "Hum",
+    "start": 13.803,
+    "end": 14.336,
+    "line_idx": 3
+  },
+  {
+    "word": "jaise",
+    "start": 14.43,
+    "end": 14.964,
+    "line_idx": 3
+  },
+  {
+    "word": "toh",
+    "start": 15.058,
+    "end": 15.591,
+    "line_idx": 3
+  },
+  {
+    "word": "dil",
+    "start": 15.685,
+    "end": 16.219,
+    "line_idx": 3
+  },
+  {
+    "word": "lagane",
+    "start": 16.313,
+    "end": 16.846,
+    "line_idx": 3
+  },
+  {
+    "word": "se",
+    "start": 16.94,
+    "end": 17.473,
+    "line_idx": 3
+  },
+  {
+    "word": "darte",
+    "start": 17.567,
+    "end": 18.101,
+    "line_idx": 3
+  },
+  {
+    "word": "the",
+    "start": 18.195,
+    "end": 18.728,
+    "line_idx": 3
+  },
+  {
+    "word": "[00:34.80]",
+    "start": 18.822,
+    "end": 19.356,
+    "line_idx": 4
+  },
+  {
+    "word": "Kaisa",
+    "start": 19.45,
+    "end": 19.983,
+    "line_idx": 4
+  },
+  {
+    "word": "lag",
+    "start": 20.077,
+    "end": 20.61,
+    "line_idx": 4
+  },
+  {
+    "word": "raha",
+    "start": 20.705,
+    "end": 21.238,
+    "line_idx": 4
+  },
+  {
+    "word": "hai",
+    "start": 21.332,
+    "end": 21.865,
+    "line_idx": 4
+  },
+  {
+    "word": "ab",
+    "start": 21.959,
+    "end": 22.493,
+    "line_idx": 4
+  },
+  {
+    "word": "wo",
+    "start": 22.587,
+    "end": 23.12,
+    "line_idx": 4
+  },
+  {
+    "word": "[00:38.24]",
+    "start": 23.214,
+    "end": 23.747,
+    "line_idx": 5
+  },
+  {
+    "word": "Dekha",
+    "start": 23.842,
+    "end": 24.375,
+    "line_idx": 5
+  },
+  {
+    "word": "hai",
+    "start": 24.469,
+    "end": 25.002,
+    "line_idx": 5
+  },
+  {
+    "word": "kisi",
+    "start": 25.096,
+    "end": 25.63,
+    "line_idx": 5
+  },
+  {
+    "word": "ne",
+    "start": 25.724,
+    "end": 26.257,
+    "line_idx": 5
+  },
+  {
+    "word": "usko",
+    "start": 26.351,
+    "end": 26.885,
+    "line_idx": 5
+  },
+  {
+    "word": "[00:41.16]",
+    "start": 26.979,
+    "end": 27.512,
+    "line_idx": 6
+  },
+  {
+    "word": "Mera",
+    "start": 27.606,
+    "end": 28.139,
+    "line_idx": 6
+  },
+  {
+    "word": "bhi",
+    "start": 28.233,
+    "end": 28.767,
+    "line_idx": 6
+  },
+  {
+    "word": "usay",
+    "start": 28.861,
+    "end": 29.394,
+    "line_idx": 6
+  },
+  {
+    "word": "batana",
+    "start": 29.488,
+    "end": 30.022,
+    "line_idx": 6
+  },
+  {
+    "word": "[00:44.08]",
+    "start": 30.116,
+    "end": 30.649,
+    "line_idx": 7
+  },
+  {
+    "word": "Wo",
+    "start": 30.743,
+    "end": 31.276,
+    "line_idx": 7
+  },
+  {
+    "word": "bhoole",
+    "start": 31.371,
+    "end": 31.904,
+    "line_idx": 7
+  },
+  {
+    "word": "na",
+    "start": 31.998,
+    "end": 32.531,
+    "line_idx": 7
+  },
+  {
+    "word": "[00:48.08]",
+    "start": 32.625,
+    "end": 33.159,
+    "line_idx": 8
+  },
+  {
+    "word": "Unki",
+    "start": 33.253,
+    "end": 33.786,
+    "line_idx": 8
+  },
+  {
+    "word": "tareef",
+    "start": 33.88,
+    "end": 34.413,
+    "line_idx": 8
+  },
+  {
+    "word": "mein",
+    "start": 34.508,
+    "end": 35.041,
+    "line_idx": 8
+  },
+  {
+    "word": "kahein",
+    "start": 35.135,
+    "end": 35.668,
+    "line_idx": 8
+  },
+  {
+    "word": "kya",
+    "start": 35.762,
+    "end": 36.296,
+    "line_idx": 8
+  },
+  {
+    "word": "[00:52.10]",
+    "start": 36.39,
+    "end": 36.923,
+    "line_idx": 9
+  },
+  {
+    "word": "Alfaaz",
+    "start": 37.017,
+    "end": 37.55,
+    "line_idx": 9
+  },
+  {
+    "word": "hi",
+    "start": 37.645,
+    "end": 38.178,
+    "line_idx": 9
+  },
+  {
+    "word": "nahi",
+    "start": 38.272,
+    "end": 38.805,
+    "line_idx": 9
+  },
+  {
+    "word": "hain",
+    "start": 38.899,
+    "end": 39.433,
+    "line_idx": 9
+  },
+  {
+    "word": "[00:54.64]",
+    "start": 39.527,
+    "end": 40.06,
+    "line_idx": 10
+  },
+  {
+    "word": "Jo",
+    "start": 40.154,
+    "end": 40.688,
+    "line_idx": 10
+  },
+  {
+    "word": "kuch",
+    "start": 40.782,
+    "end": 41.315,
+    "line_idx": 10
+  },
+  {
+    "word": "mera",
+    "start": 41.409,
+    "end": 41.942,
+    "line_idx": 10
+  },
+  {
+    "word": "hai",
+    "start": 42.036,
+    "end": 42.57,
+    "line_idx": 10
+  },
+  {
+    "word": "sab",
+    "start": 42.664,
+    "end": 43.197,
+    "line_idx": 10
+  },
+  {
+    "word": "kuch",
+    "start": 43.291,
+    "end": 43.825,
+    "line_idx": 10
+  },
+  {
+    "word": "[00:58.00]",
+    "start": 43.919,
+    "end": 44.452,
+    "line_idx": 11
+  },
+  {
+    "word": "Unka",
+    "start": 44.546,
+    "end": 45.079,
+    "line_idx": 11
+  },
+  {
+    "word": "[00:59.66]",
+    "start": 45.174,
+    "end": 45.707,
+    "line_idx": 12
+  },
+  {
+    "word": "Unse",
+    "start": 45.801,
+    "end": 46.334,
+    "line_idx": 12
+  },
+  {
+    "word": "zyada",
+    "start": 46.428,
+    "end": 46.962,
+    "line_idx": 12
+  },
+  {
+    "word": "kasam",
+    "start": 47.056,
+    "end": 47.589,
+    "line_idx": 12
+  },
+  {
+    "word": "se",
+    "start": 47.683,
+    "end": 48.216,
+    "line_idx": 12
+  },
+  {
+    "word": "humko",
+    "start": 48.311,
+    "end": 48.844,
+    "line_idx": 12
+  },
+  {
+    "word": "[01:04.02]",
+    "start": 48.938,
+    "end": 49.471,
+    "line_idx": 13
+  },
+  {
+    "word": "Koi",
+    "start": 49.565,
+    "end": 50.099,
+    "line_idx": 13
+  },
+  {
+    "word": "khaas",
+    "start": 50.193,
+    "end": 50.726,
+    "line_idx": 13
+  },
+  {
+    "word": "hi",
+    "start": 50.82,
+    "end": 51.354,
+    "line_idx": 13
+  },
+  {
+    "word": "nahi",
+    "start": 51.448,
+    "end": 51.981,
+    "line_idx": 13
+  },
+  {
+    "word": "hai",
+    "start": 52.075,
+    "end": 52.608,
+    "line_idx": 13
+  },
+  {
+    "word": "[01:07.00]",
+    "start": 52.702,
+    "end": 53.236,
+    "line_idx": 14
+  },
+  {
+    "word": "Khayal",
+    "start": 53.33,
+    "end": 53.863,
+    "line_idx": 14
+  },
+  {
+    "word": "hai",
+    "start": 53.957,
+    "end": 54.491,
+    "line_idx": 14
+  },
+  {
+    "word": "bada",
+    "start": 54.585,
+    "end": 55.118,
+    "line_idx": 14
+  },
+  {
+    "word": "[01:09.64]",
+    "start": 55.212,
+    "end": 55.745,
+    "line_idx": 15
+  },
+  {
+    "word": "Unka",
+    "start": 55.84,
+    "end": 56.373,
+    "line_idx": 15
+  },
+  {
+    "word": "[01:12.16]",
+    "start": 56.467,
+    "end": 57.0,
+    "line_idx": 16
+  },
+  {
+    "word": "Akkhiyan",
+    "start": 57.094,
+    "end": 57.628,
+    "line_idx": 16
+  },
+  {
+    "word": "de",
+    "start": 57.722,
+    "end": 58.255,
+    "line_idx": 16
+  },
+  {
+    "word": "samne",
+    "start": 58.349,
+    "end": 58.882,
+    "line_idx": 16
+  },
+  {
+    "word": "tu",
+    "start": 58.977,
+    "end": 59.51,
+    "line_idx": 16
+  },
+  {
+    "word": "[01:14.88]",
+    "start": 59.604,
+    "end": 60.137,
+    "line_idx": 17
+  },
+  {
+    "word": "Baitha",
+    "start": 60.231,
+    "end": 60.765,
+    "line_idx": 17
+  },
+  {
+    "word": "rawein",
+    "start": 60.859,
+    "end": 61.392,
+    "line_idx": 17
+  },
+  {
+    "word": "der",
+    "start": 61.486,
+    "end": 62.019,
+    "line_idx": 17
+  },
+  {
+    "word": "tak",
+    "start": 62.114,
+    "end": 62.647,
+    "line_idx": 17
+  },
+  {
+    "word": "[01:17.84]",
+    "start": 62.741,
+    "end": 63.274,
+    "line_idx": 18
+  },
+  {
+    "word": "Wekhan",
+    "start": 63.368,
+    "end": 63.902,
+    "line_idx": 18
+  },
+  {
+    "word": "tainu",
+    "start": 63.996,
+    "end": 64.529,
+    "line_idx": 18
+  },
+  {
+    "word": "raat",
+    "start": 64.623,
+    "end": 65.157,
+    "line_idx": 18
+  },
+  {
+    "word": "sari",
+    "start": 65.251,
+    "end": 65.784,
+    "line_idx": 18
+  },
+  {
+    "word": "[01:21.46]",
+    "start": 65.878,
+    "end": 66.411,
+    "line_idx": 19
+  },
+  {
+    "word": "Chadhdi",
+    "start": 66.505,
+    "end": 67.039,
+    "line_idx": 19
+  },
+  {
+    "word": "sawer",
+    "start": 67.133,
+    "end": 67.666,
+    "line_idx": 19
+  },
+  {
+    "word": "tak",
+    "start": 67.76,
+    "end": 68.294,
+    "line_idx": 19
+  },
+  {
+    "word": "[01:23.84]",
+    "start": 68.388,
+    "end": 68.921,
+    "line_idx": 20
+  },
+  {
+    "word": "Baagan",
+    "start": 69.015,
+    "end": 69.548,
+    "line_idx": 20
+  },
+  {
+    "word": "vichon",
+    "start": 69.643,
+    "end": 70.176,
+    "line_idx": 20
+  },
+  {
+    "word": "main",
+    "start": 70.27,
+    "end": 70.803,
+    "line_idx": 20
+  },
+  {
+    "word": "te",
+    "start": 70.897,
+    "end": 71.431,
+    "line_idx": 20
+  },
+  {
+    "word": "tode",
+    "start": 71.525,
+    "end": 72.058,
+    "line_idx": 20
+  },
+  {
+    "word": "[01:27.42]",
+    "start": 72.152,
+    "end": 72.685,
+    "line_idx": 21
+  },
+  {
+    "word": "Tere",
+    "start": 72.78,
+    "end": 73.313,
+    "line_idx": 21
+  },
+  {
+    "word": "layi",
+    "start": 73.407,
+    "end": 73.94,
+    "line_idx": 21
+  },
+  {
+    "word": "gulab",
+    "start": 74.034,
+    "end": 74.568,
+    "line_idx": 21
+  },
+  {
+    "word": "ve",
+    "start": 74.662,
+    "end": 75.195,
+    "line_idx": 21
+  },
+  {
+    "word": "[01:30.16]",
+    "start": 75.289,
+    "end": 75.823,
+    "line_idx": 22
+  },
+  {
+    "word": "Main",
+    "start": 75.917,
+    "end": 76.45,
+    "line_idx": 22
+  },
+  {
+    "word": "te",
+    "start": 76.544,
+    "end": 77.077,
+    "line_idx": 22
+  },
+  {
+    "word": "bas",
+    "start": 77.171,
+    "end": 77.705,
+    "line_idx": 22
+  },
+  {
+    "word": "kehnda",
+    "start": 77.799,
+    "end": 78.332,
+    "line_idx": 22
+  },
+  {
+    "word": "rehnda",
+    "start": 78.426,
+    "end": 78.96,
+    "line_idx": 22
+  },
+  {
+    "word": "[01:33.46]",
+    "start": 79.054,
+    "end": 79.587,
+    "line_idx": 23
+  },
+  {
+    "word": "Aap",
+    "start": 79.681,
+    "end": 80.214,
+    "line_idx": 23
+  },
+  {
+    "word": "janab",
+    "start": 80.309,
+    "end": 80.842,
+    "line_idx": 23
+  },
+  {
+    "word": "ve",
+    "start": 80.936,
+    "end": 81.469,
+    "line_idx": 23
+  },
+  {
+    "word": "[01:35.34]",
+    "start": 81.563,
+    "end": 82.097,
+    "line_idx": 24
+  },
+  {
+    "word": "Tu",
+    "start": 82.191,
+    "end": 82.724,
+    "line_idx": 24
+  },
+  {
+    "word": "te",
+    "start": 82.818,
+    "end": 83.351,
+    "line_idx": 24
+  },
+  {
+    "word": "taareyan",
+    "start": 83.446,
+    "end": 83.979,
+    "line_idx": 24
+  },
+  {
+    "word": "ton",
+    "start": 84.073,
+    "end": 84.606,
+    "line_idx": 24
+  },
+  {
+    "word": "vi",
+    "start": 84.7,
+    "end": 85.234,
+    "line_idx": 24
+  },
+  {
+    "word": "sohna",
+    "start": 85.328,
+    "end": 85.861,
+    "line_idx": 24
+  },
+  {
+    "word": "ae",
+    "start": 85.955,
+    "end": 86.488,
+    "line_idx": 24
+  },
+  {
+    "word": "[01:38.68]",
+    "start": 86.583,
+    "end": 87.116,
+    "line_idx": 25
+  },
+  {
+    "word": "Tere",
+    "start": 87.21,
+    "end": 87.743,
+    "line_idx": 25
+  },
+  {
+    "word": "varga",
+    "start": 87.837,
+    "end": 88.371,
+    "line_idx": 25
+  },
+  {
+    "word": "koi",
+    "start": 88.465,
+    "end": 88.998,
+    "line_idx": 25
+  },
+  {
+    "word": "na",
+    "start": 89.092,
+    "end": 89.626,
+    "line_idx": 25
+  },
+  {
+    "word": "hona",
+    "start": 89.72,
+    "end": 90.253,
+    "line_idx": 25
+  },
+  {
+    "word": "ae",
+    "start": 90.347,
+    "end": 90.88,
+    "line_idx": 25
+  },
+  {
+    "word": "[01:41.24]",
+    "start": 90.974,
+    "end": 91.508,
+    "line_idx": 26
+  },
+  {
+    "word": "Tu",
+    "start": 91.602,
+    "end": 92.135,
+    "line_idx": 26
+  },
+  {
+    "word": "te",
+    "start": 92.229,
+    "end": 92.763,
+    "line_idx": 26
+  },
+  {
+    "word": "taareyan",
+    "start": 92.857,
+    "end": 93.39,
+    "line_idx": 26
+  },
+  {
+    "word": "ton",
+    "start": 93.484,
+    "end": 94.017,
+    "line_idx": 26
+  },
+  {
+    "word": "vi",
+    "start": 94.112,
+    "end": 94.645,
+    "line_idx": 26
+  },
+  {
+    "word": "sohna",
+    "start": 94.739,
+    "end": 95.272,
+    "line_idx": 26
+  },
+  {
+    "word": "ae",
+    "start": 95.366,
+    "end": 95.9,
+    "line_idx": 26
+  },
+  {
+    "word": "[01:44.54]",
+    "start": 95.994,
+    "end": 96.527,
+    "line_idx": 27
+  },
+  {
+    "word": "Tere",
+    "start": 96.621,
+    "end": 97.154,
+    "line_idx": 27
+  },
+  {
+    "word": "varga",
+    "start": 97.249,
+    "end": 97.782,
+    "line_idx": 27
+  },
+  {
+    "word": "koi",
+    "start": 97.876,
+    "end": 98.409,
+    "line_idx": 27
+  },
+  {
+    "word": "na",
+    "start": 98.503,
+    "end": 99.037,
+    "line_idx": 27
+  },
+  {
+    "word": "hona",
+    "start": 99.131,
+    "end": 99.664,
+    "line_idx": 27
+  },
+  {
+    "word": "ae",
+    "start": 99.758,
+    "end": 100.292,
+    "line_idx": 27
+  },
+  {
+    "word": "[01:47.54]",
+    "start": 100.386,
+    "end": 100.919,
+    "line_idx": 28
+  },
+  {
+    "word": "Jinna",
+    "start": 101.013,
+    "end": 101.546,
+    "line_idx": 28
+  },
+  {
+    "word": "aanda",
+    "start": 101.64,
+    "end": 102.174,
+    "line_idx": 28
+  },
+  {
+    "word": "si",
+    "start": 102.268,
+    "end": 102.801,
+    "line_idx": 28
+  },
+  {
+    "word": "mainu",
+    "start": 102.895,
+    "end": 103.429,
+    "line_idx": 28
+  },
+  {
+    "word": "pyar",
+    "start": 103.523,
+    "end": 104.056,
+    "line_idx": 28
+  },
+  {
+    "word": "karna",
+    "start": 104.15,
+    "end": 104.683,
+    "line_idx": 28
+  },
+  {
+    "word": "ji",
+    "start": 104.777,
+    "end": 105.311,
+    "line_idx": 28
+  },
+  {
+    "word": "[01:50.96]",
+    "start": 105.405,
+    "end": 105.938,
+    "line_idx": 29
+  },
+  {
+    "word": "Main",
+    "start": 106.032,
+    "end": 106.566,
+    "line_idx": 29
+  },
+  {
+    "word": "te",
+    "start": 106.66,
+    "end": 107.193,
+    "line_idx": 29
+  },
+  {
+    "word": "tere",
+    "start": 107.287,
+    "end": 107.82,
+    "line_idx": 29
+  },
+  {
+    "word": "naal",
+    "start": 107.915,
+    "end": 108.448,
+    "line_idx": 29
+  },
+  {
+    "word": "kar",
+    "start": 108.542,
+    "end": 109.075,
+    "line_idx": 29
+  },
+  {
+    "word": "leya",
+    "start": 109.169,
+    "end": 109.703,
+    "line_idx": 29
+  },
+  {
+    "word": "ae",
+    "start": 109.797,
+    "end": 110.33,
+    "line_idx": 29
+  },
+  {
+    "word": "[01:53.34]",
+    "start": 110.424,
+    "end": 110.957,
+    "line_idx": 30
+  },
+  {
+    "word": "Main",
+    "start": 111.052,
+    "end": 111.585,
+    "line_idx": 30
+  },
+  {
+    "word": "te",
+    "start": 111.679,
+    "end": 112.212,
+    "line_idx": 30
+  },
+  {
+    "word": "chum",
+    "start": 112.306,
+    "end": 112.84,
+    "line_idx": 30
+  },
+  {
+    "word": "lawan",
+    "start": 112.934,
+    "end": 113.467,
+    "line_idx": 30
+  },
+  {
+    "word": "ohna",
+    "start": 113.561,
+    "end": 114.095,
+    "line_idx": 30
+  },
+  {
+    "word": "raawan",
+    "start": 114.189,
+    "end": 114.722,
+    "line_idx": 30
+  },
+  {
+    "word": "nu",
+    "start": 114.816,
+    "end": 115.349,
+    "line_idx": 30
+  },
+  {
+    "word": "[01:56.36]",
+    "start": 115.443,
+    "end": 115.977,
+    "line_idx": 31
+  },
+  {
+    "word": "Jithon",
+    "start": 116.071,
+    "end": 116.604,
+    "line_idx": 31
+  },
+  {
+    "word": "ik",
+    "start": 116.698,
+    "end": 117.232,
+    "line_idx": 31
+  },
+  {
+    "word": "wari",
+    "start": 117.326,
+    "end": 117.859,
+    "line_idx": 31
+  },
+  {
+    "word": "kadi",
+    "start": 117.953,
+    "end": 118.486,
+    "line_idx": 31
+  },
+  {
+    "word": "langheya",
+    "start": 118.581,
+    "end": 119.114,
+    "line_idx": 31
+  },
+  {
+    "word": "tu",
+    "start": 119.208,
+    "end": 119.741,
+    "line_idx": 31
+  },
+  {
+    "word": "[01:59.08]",
+    "start": 119.835,
+    "end": 120.369,
+    "line_idx": 32
+  },
+  {
+    "word": "Gallan",
+    "start": 120.463,
+    "end": 120.996,
+    "line_idx": 32
+  },
+  {
+    "word": "do",
+    "start": 121.09,
+    "end": 121.623,
+    "line_idx": 32
+  },
+  {
+    "word": "hi",
+    "start": 121.718,
+    "end": 122.251,
+    "line_idx": 32
+  },
+  {
+    "word": "ne",
+    "start": 122.345,
+    "end": 122.878,
+    "line_idx": 32
+  },
+  {
+    "word": "[02:00.92]",
+    "start": 122.972,
+    "end": 123.506,
+    "line_idx": 33
+  },
+  {
+    "word": "Hor",
+    "start": 123.6,
+    "end": 124.133,
+    "line_idx": 33
+  },
+  {
+    "word": "koi",
+    "start": 124.227,
+    "end": 124.761,
+    "line_idx": 33
+  },
+  {
+    "word": "vi",
+    "start": 124.855,
+    "end": 125.388,
+    "line_idx": 33
+  },
+  {
+    "word": "nahi",
+    "start": 125.482,
+    "end": 126.015,
+    "line_idx": 33
+  },
+  {
+    "word": "[02:02.38]",
+    "start": 126.109,
+    "end": 126.643,
+    "line_idx": 34
+  },
+  {
+    "word": "Ya",
+    "start": 126.737,
+    "end": 127.27,
+    "line_idx": 34
+  },
+  {
+    "word": "te",
+    "start": 127.364,
+    "end": 127.898,
+    "line_idx": 34
+  },
+  {
+    "word": "tu",
+    "start": 127.992,
+    "end": 128.525,
+    "line_idx": 34
+  },
+  {
+    "word": "e",
+    "start": 128.619,
+    "end": 129.152,
+    "line_idx": 34
+  },
+  {
+    "word": "ae",
+    "start": 129.246,
+    "end": 129.78,
+    "line_idx": 34
+  },
+  {
+    "word": "[02:03.80]",
+    "start": 129.874,
+    "end": 130.407,
+    "line_idx": 35
+  },
+  {
+    "word": "Ya",
+    "start": 130.501,
+    "end": 131.035,
+    "line_idx": 35
+  },
+  {
+    "word": "te",
+    "start": 131.129,
+    "end": 131.662,
+    "line_idx": 35
+  },
+  {
+    "word": "koi",
+    "start": 131.756,
+    "end": 132.289,
+    "line_idx": 35
+  },
+  {
+    "word": "nahi",
+    "start": 132.384,
+    "end": 132.917,
+    "line_idx": 35
+  },
+  {
+    "word": "[02:05.30]",
+    "start": 133.011,
+    "end": 133.544,
+    "line_idx": 36
+  },
+  {
+    "word": "Meri",
+    "start": 133.638,
+    "end": 134.172,
+    "line_idx": 36
+  },
+  {
+    "word": "vi",
+    "start": 134.266,
+    "end": 134.799,
+    "line_idx": 36
+  },
+  {
+    "word": "gal",
+    "start": 134.893,
+    "end": 135.426,
+    "line_idx": 36
+  },
+  {
+    "word": "tu",
+    "start": 135.521,
+    "end": 136.054,
+    "line_idx": 36
+  },
+  {
+    "word": "[02:07.06]",
+    "start": 136.148,
+    "end": 136.681,
+    "line_idx": 37
+  },
+  {
+    "word": "Sun",
+    "start": 136.775,
+    "end": 137.309,
+    "line_idx": 37
+  },
+  {
+    "word": "lai",
+    "start": 137.403,
+    "end": 137.936,
+    "line_idx": 37
+  },
+  {
+    "word": "na",
+    "start": 138.03,
+    "end": 138.564,
+    "line_idx": 37
+  },
+  {
+    "word": "[02:11.36]",
+    "start": 138.658,
+    "end": 139.191,
+    "line_idx": 38
+  },
+  {
+    "word": "Unki",
+    "start": 139.285,
+    "end": 139.818,
+    "line_idx": 38
+  },
+  {
+    "word": "tareef",
+    "start": 139.912,
+    "end": 140.446,
+    "line_idx": 38
+  },
+  {
+    "word": "mein",
+    "start": 140.54,
+    "end": 141.073,
+    "line_idx": 38
+  },
+  {
+    "word": "kahein",
+    "start": 141.167,
+    "end": 141.701,
+    "line_idx": 38
+  },
+  {
+    "word": "kya",
+    "start": 141.795,
+    "end": 142.328,
+    "line_idx": 38
+  },
+  {
+    "word": "[02:16.14]",
+    "start": 142.422,
+    "end": 142.955,
+    "line_idx": 39
+  },
+  {
+    "word": "Alfaaz",
+    "start": 143.05,
+    "end": 143.583,
+    "line_idx": 39
+  },
+  {
+    "word": "hi",
+    "start": 143.677,
+    "end": 144.21,
+    "line_idx": 39
+  },
+  {
+    "word": "nahi",
+    "start": 144.304,
+    "end": 144.838,
+    "line_idx": 39
+  },
+  {
+    "word": "hain",
+    "start": 144.932,
+    "end": 145.465,
+    "line_idx": 39
+  },
+  {
+    "word": "[02:18.84]",
+    "start": 145.559,
+    "end": 146.092,
+    "line_idx": 40
+  },
+  {
+    "word": "Jo",
+    "start": 146.187,
+    "end": 146.72,
+    "line_idx": 40
+  },
+  {
+    "word": "kuch",
+    "start": 146.814,
+    "end": 147.347,
+    "line_idx": 40
+  },
+  {
+    "word": "mera",
+    "start": 147.441,
+    "end": 147.975,
+    "line_idx": 40
+  },
+  {
+    "word": "hai",
+    "start": 148.069,
+    "end": 148.602,
+    "line_idx": 40
+  },
+  {
+    "word": "sab",
+    "start": 148.696,
+    "end": 149.23,
+    "line_idx": 40
+  },
+  {
+    "word": "kuch",
+    "start": 149.324,
+    "end": 149.857,
+    "line_idx": 40
+  },
+  {
+    "word": "[02:22.10]",
+    "start": 149.951,
+    "end": 150.484,
+    "line_idx": 41
+  },
+  {
+    "word": "Unka",
+    "start": 150.578,
+    "end": 151.112,
+    "line_idx": 41
+  },
+  {
+    "word": "[02:23.68]",
+    "start": 151.206,
+    "end": 151.739,
+    "line_idx": 42
+  },
+  {
+    "word": "Unse",
+    "start": 151.833,
+    "end": 152.367,
+    "line_idx": 42
+  },
+  {
+    "word": "zyada",
+    "start": 152.461,
+    "end": 152.994,
+    "line_idx": 42
+  },
+  {
+    "word": "kasam",
+    "start": 153.088,
+    "end": 153.621,
+    "line_idx": 42
+  },
+  {
+    "word": "se",
+    "start": 153.715,
+    "end": 154.249,
+    "line_idx": 42
+  },
+  {
+    "word": "[02:26.66]",
+    "start": 154.343,
+    "end": 154.876,
+    "line_idx": 43
+  },
+  {
+    "word": "Humko",
+    "start": 154.97,
+    "end": 155.504,
+    "line_idx": 43
+  },
+  {
+    "word": "koi",
+    "start": 155.598,
+    "end": 156.131,
+    "line_idx": 43
+  },
+  {
+    "word": "khaas",
+    "start": 156.225,
+    "end": 156.758,
+    "line_idx": 43
+  },
+  {
+    "word": "hi",
+    "start": 156.853,
+    "end": 157.386,
+    "line_idx": 43
+  },
+  {
+    "word": "nahi",
+    "start": 157.48,
+    "end": 158.013,
+    "line_idx": 43
+  },
+  {
+    "word": "hai",
+    "start": 158.107,
+    "end": 158.641,
+    "line_idx": 43
+  },
+  {
+    "word": "[02:30.35]",
+    "start": 158.735,
+    "end": 159.268,
+    "line_idx": 44
+  },
+  {
+    "word": "Khayal",
+    "start": 159.362,
+    "end": 159.895,
+    "line_idx": 44
+  },
+  {
+    "word": "hai",
+    "start": 159.99,
+    "end": 160.523,
+    "line_idx": 44
+  },
+  {
+    "word": "bada",
+    "start": 160.617,
+    "end": 161.15,
+    "line_idx": 44
+  },
+  {
+    "word": "unka",
+    "start": 161.244,
+    "end": 161.778,
+    "line_idx": 44
+  },
+  {
+    "word": "[02:35.25]",
+    "start": 161.872,
+    "end": 162.405,
+    "line_idx": 45
+  },
+  {
+    "word": "Unki",
+    "start": 162.499,
+    "end": 163.033,
+    "line_idx": 45
+  },
+  {
+    "word": "tareef",
+    "start": 163.127,
+    "end": 163.66,
+    "line_idx": 45
+  },
+  {
+    "word": "mein",
+    "start": 163.754,
+    "end": 164.287,
+    "line_idx": 45
+  },
+  {
+    "word": "kahein",
+    "start": 164.381,
+    "end": 164.915,
+    "line_idx": 45
+  },
+  {
+    "word": "kya",
+    "start": 165.009,
+    "end": 165.542,
+    "line_idx": 45
+  },
+  {
+    "word": "[02:40.21]",
+    "start": 165.636,
+    "end": 166.17,
+    "line_idx": 46
+  },
+  {
+    "word": "Alfaaz",
+    "start": 166.264,
+    "end": 166.797,
+    "line_idx": 46
+  },
+  {
+    "word": "hi",
+    "start": 166.891,
+    "end": 167.424,
+    "line_idx": 46
+  },
+  {
+    "word": "nahi",
+    "start": 167.519,
+    "end": 168.052,
+    "line_idx": 46
+  },
+  {
+    "word": "hain",
+    "start": 168.146,
+    "end": 168.679,
+    "line_idx": 46
+  },
+  {
+    "word": "[02:42.61]",
+    "start": 168.773,
+    "end": 169.307,
+    "line_idx": 47
+  },
+  {
+    "word": "Jo",
+    "start": 169.401,
+    "end": 169.934,
+    "line_idx": 47
+  },
+  {
+    "word": "kuch",
+    "start": 170.028,
+    "end": 170.561,
+    "line_idx": 47
+  },
+  {
+    "word": "mera",
+    "start": 170.656,
+    "end": 171.189,
+    "line_idx": 47
+  },
+  {
+    "word": "hai",
+    "start": 171.283,
+    "end": 171.816,
+    "line_idx": 47
+  },
+  {
+    "word": "sab",
+    "start": 171.91,
+    "end": 172.444,
+    "line_idx": 47
+  },
+  {
+    "word": "kuch",
+    "start": 172.538,
+    "end": 173.071,
+    "line_idx": 47
+  },
+  {
+    "word": "[02:46.01]",
+    "start": 173.165,
+    "end": 173.699,
+    "line_idx": 48
+  },
+  {
+    "word": "Unka",
+    "start": 173.793,
+    "end": 174.326,
+    "line_idx": 48
+  },
+  {
+    "word": "[02:47.65]",
+    "start": 174.42,
+    "end": 174.953,
+    "line_idx": 49
+  },
+  {
+    "word": "Unse",
+    "start": 175.047,
+    "end": 175.581,
+    "line_idx": 49
+  },
+  {
+    "word": "zyada",
+    "start": 175.675,
+    "end": 176.208,
+    "line_idx": 49
+  },
+  {
+    "word": "kasam",
+    "start": 176.302,
+    "end": 176.836,
+    "line_idx": 49
+  },
+  {
+    "word": "se",
+    "start": 176.93,
+    "end": 177.463,
+    "line_idx": 49
+  },
+  {
+    "word": "[02:50.71]",
+    "start": 177.557,
+    "end": 178.09,
+    "line_idx": 50
+  },
+  {
+    "word": "Humko",
+    "start": 178.184,
+    "end": 178.718,
+    "line_idx": 50
+  },
+  {
+    "word": "koi",
+    "start": 178.812,
+    "end": 179.345,
+    "line_idx": 50
+  },
+  {
+    "word": "khaas",
+    "start": 179.439,
+    "end": 179.973,
+    "line_idx": 50
+  },
+  {
+    "word": "hi",
+    "start": 180.067,
+    "end": 180.6,
+    "line_idx": 50
+  },
+  {
+    "word": "nahi",
+    "start": 180.694,
+    "end": 181.227,
+    "line_idx": 50
+  },
+  {
+    "word": "hai",
+    "start": 181.322,
+    "end": 181.855,
+    "line_idx": 50
+  },
+  {
+    "word": "[02:54.81]",
+    "start": 181.949,
+    "end": 182.482,
+    "line_idx": 51
+  },
+  {
+    "word": "Khayal",
+    "start": 182.576,
+    "end": 183.11,
+    "line_idx": 51
+  },
+  {
+    "word": "hai",
+    "start": 183.204,
+    "end": 183.737,
+    "line_idx": 51
+  },
+  {
+    "word": "bada",
+    "start": 183.831,
+    "end": 184.364,
+    "line_idx": 51
+  },
+  {
+    "word": "unka",
+    "start": 184.459,
+    "end": 184.992,
+    "line_idx": 51
+  }
+]
