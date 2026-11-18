@@ -27,7 +27,7 @@ try:
         if not video_dir.exists():
             raise FileNotFoundError("video/ directory not found!")
         if not (video_dir / "node_modules").exists():
-            run_cmd(["npm", "install", "--legacy-peer-deps", "--silent"], cwd=str(video_dir))
+            run_cmd(["npm", "install", "--no-audit", "--no-fund", "--cache", "/tmp/npm-cache"], cwd=str(video_dir))
         for fn in ["beat-map.json", "word-timestamps.json", "phrases.json", "visual-screenplay.json"]:
             src = Path("data") / fn
 
