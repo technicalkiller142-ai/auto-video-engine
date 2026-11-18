@@ -3,6 +3,7 @@ import os
 import time
 import json
 import shutil
+import sys
 from pathlib import Path
 import setup_kaggle_auth
 
@@ -34,10 +35,11 @@ def trigger():
     update_status("pushing_kaggle", "Pushing Kaggle kernel...", "Alignment")
     print("[KAGGLE] Pushing kernel to vinu07/autorenderworker...")
 
-    result = subprocess.run(["kaggle", "kernels", "push", "-p", "./kaggle_kernel"], capture_output=True, text=True)
+    # Using sys.executable -m kaggle.cli to ensure it uses the correct environment
+    result = subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "push", "-p", "./kaggle_kernel"], capture_output=True, text=True)
 
     if result.returncode != 0:
-        error_msg = f"Kaggle push failed: {result.stderr} {result.stdout}"
+        error_msg = f"Kaggle push failed:\nSTDOUT: {result.stdout}\nSTDERR: {result.stderr}"
         update_status("error", error_msg, "Alignment")
         print(f"[KAGGLE] {error_msg}")
         return
@@ -49,11 +51,11 @@ def trigger():
         update_status("running_gpu", f"Status: running... ({elapsed}s elapsed)", "Alignment")
         print(f"[KAGGLE] Status: running... ({elapsed}s elapsed)")
 
-        res = subprocess.run(["kaggle", "kernels", "status", "vinu07/autorenderworker"], capture_output=True, text=True)
+        res = subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "status", "vinu07/autorenderworker"], capture_output=True, text=True)
         if "complete" in res.stdout.lower():
             break
         if "error" in res.stdout.lower():
-            update_status("error", "Kaggle execution failed.", "Alignment")
+            update_status("error", f"Kaggle execution failed: {res.stdout}", "Alignment")
             print(f"[KAGGLE] Error: {res.stdout}")
             return
         time.sleep(15)
@@ -61,14 +63,16 @@ def trigger():
     # 5. Output
     update_status("downloading", "Downloading outputs...", "Alignment")
     print("Downloading outputs...")
-    subprocess.run(["kaggle", "kernels", "output", "vinu07/autorenderworker", "-p", "./data"], check=True)
+    subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "output", "vinu07/autorenderworker", "-p", "./kaggle_out"], check=True)
 
-    # Move files
-    for f in Path("./data").glob("*"):
-        if f.suffix == ".json":
-            shutil.copy2(f, REPO_DIR / "data" / f.name)
-        elif f.suffix == ".mp4":
-            shutil.copy2(f, REPO_DIR / f.name)
+    # Move files from kaggle_out to data/root
+    kaggle_out = REPO_DIR / "kaggle_out"
+    if kaggle_out.exists():
+        for f in kaggle_out.glob("*"):
+            if f.suffix == ".json":
+                shutil.copy2(f, REPO_DIR / "data" / f.name)
+            elif f.suffix == ".mp4":
+                shutil.copy2(f, REPO_DIR / f.name)
 
     update_status("complete", "Files downloaded locally!", "Alignment")
     print("[DONE] Files downloaded locally!")

@@ -1,9 +1,9 @@
 {
   "id": "vinu07/autorenderworker",
   "title": "AutoRenderWorker",
-  "code_file": "autorenderworker.ipynb",
+  "code_file": "runner.py",
   "language": "python",
-  "kernel_type": "notebook",
+  "kernel_type": "script",
   "is_private": true,
   "enable_gpu": true,
   "enable_tpu": false,
