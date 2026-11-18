@@ -1,3 +1,5 @@
+import os
+os.system("apt-get update -qq; apt-get install -y -qq libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2")
 import os, re, sys, json, shutil, traceback, subprocess
 from pathlib import Path
 
