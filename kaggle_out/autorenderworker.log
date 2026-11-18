@@ -1,27 +1,35 @@
-[{"stream_name":"stderr","time":0.846958198,"data":"Cloning into 'auto-video-engine'...\n"}
-,{"stream_name":"stdout","time":3.381849904,"data":"=== RUNNING STAGE : sync_test ===\n"}
-,{"stream_name":"stdout","time":3.381916197,"data":"Traceback (most recent call last):\n"}
-,{"stream_name":"stdout","time":3.381924938,"data":"  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 30, in \u003cmodule\u003e\n"}
-,{"stream_name":"stdout","time":3.3819310160000002,"data":"    run_cmd([\"npm\", \"install\", \"--legacy-peer-deps\", \"--silent\"], cwd=str(video_dir))\n"}
-,{"stream_name":"stdout","time":3.381936795,"data":"    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":3.381941724,"data":"  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 7, in run_cmd\n"}
-,{"stream_name":"stdout","time":3.381946361,"data":"    raise RuntimeError(f\"Command failed {res.returncode}: {cmd}\\nSTDOUT: {res.stdout[-1800:]}\\nSTDERR: {res.stderr[-1800:]}\")\n"}
-,{"stream_name":"stdout","time":3.381951745,"data":"RuntimeError: Command failed 254: ['npm', 'install', '--legacy-peer-deps', '--silent']\n"}
-,{"stream_name":"stdout","time":3.381956234,"data":"STDOUT: \n"}
-,{"stream_name":"stdout","time":3.381960504,"data":"STDERR: \n"}
-,{"stream_name":"stdout","time":3.38196784,"data":"\n"}
-,{"stream_name":"stderr","time":3.397597134,"data":"Traceback (most recent call last):\n"}
-,{"stream_name":"stderr","time":3.39825656,"data":"  File \"/kaggle/src/script.py\", line 7, in \u003cmodule\u003e\n"}
-,{"stream_name":"stderr","time":3.398270385,"data":"    subprocess.run([\"python\", \"cloud_runner.py\"], check=True)\n"}
-,{"stream_name":"stderr","time":3.398276258,"data":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stderr","time":3.3982923449999998,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 578, in run\n"}
-,{"stream_name":"stderr","time":3.398297527,"data":"    raise CalledProcessError(retcode, process.args,\n"}
-,{"stream_name":"stderr","time":3.398302565,"data":"                             output=stdout, stderr=stderr)\n"}
-,{"stream_name":"stderr","time":3.398307217,"data":"subprocess.CalledProcessError: Command '['python', 'cloud_runner.py']' returned non-zero exit status 1.\n"}
-,{"stream_name":"stderr","time":5.757763619,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":5.757791368,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":6.090865156,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":6.090907176,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":7.829052512,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
-,{"stream_name":"stderr","time":8.863552414,"data":"[NbConvertApp] Writing 274207 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":1.01775457,"data":"Cloning into 'auto-video-engine'...\n"}
+,{"stream_name":"stdout","time":3.802830014,"data":"=== RUNNING STAGE : sync_test ===\n"}
+,{"stream_name":"stdout","time":3.802864226,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":3.802870306,"data":"  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 30, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":3.802876148,"data":"    run_cmd([\"npm\", \"install\", \"--no-audit\", \"--no-fund\", \"--cache\", \"/tmp/npm-cache\"], cwd=str(video_dir))\n"}
+,{"stream_name":"stdout","time":3.8028819240000002,"data":"    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":3.802886983,"data":"  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 7, in run_cmd\n"}
+,{"stream_name":"stdout","time":3.8028919610000003,"data":"    raise RuntimeError(f\"Command failed {res.returncode}: {cmd}\\nSTDOUT: {res.stdout[-1800:]}\\nSTDERR: {res.stderr[-1800:]}\")\n"}
+,{"stream_name":"stdout","time":3.802897498,"data":"RuntimeError: Command failed 254: ['npm', 'install', '--no-audit', '--no-fund', '--cache', '/tmp/npm-cache']\n"}
+,{"stream_name":"stdout","time":3.802907014,"data":"STDOUT: \n"}
+,{"stream_name":"stdout","time":3.802910556,"data":"STDERR: npm error code ENOENT\n"}
+,{"stream_name":"stdout","time":3.802913876,"data":"npm error syscall open\n"}
+,{"stream_name":"stdout","time":3.80291697,"data":"npm error path /kaggle/working/auto-video-engine/package.json\n"}
+,{"stream_name":"stdout","time":3.80292013,"data":"npm error errno -2\n"}
+,{"stream_name":"stdout","time":3.802923266,"data":"npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/kaggle/working/auto-video-engine/package.json'\n"}
+,{"stream_name":"stdout","time":3.802926675,"data":"npm error enoent This is related to npm not being able to find a file.\n"}
+,{"stream_name":"stdout","time":3.802929858,"data":"npm error enoent\n"}
+,{"stream_name":"stdout","time":3.802945743,"data":"npm error A complete log of this run can be found in: /tmp/npm-cache/_logs/2026-11-18T02_59_18_225Z-debug-0.log\n"}
+,{"stream_name":"stdout","time":3.802948847,"data":"\n"}
+,{"stream_name":"stdout","time":3.80295183,"data":"\n"}
+,{"stream_name":"stderr","time":3.818939782,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":3.819509628,"data":"  File \"/kaggle/src/script.py\", line 7, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":3.819522751,"data":"    subprocess.run([\"python\", \"cloud_runner.py\"], check=True)\n"}
+,{"stream_name":"stderr","time":3.819528892,"data":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":3.819533579,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 578, in run\n"}
+,{"stream_name":"stderr","time":3.819538797,"data":"    raise CalledProcessError(retcode, process.args,\n"}
+,{"stream_name":"stderr","time":3.81954394,"data":"                             output=stdout, stderr=stderr)\n"}
+,{"stream_name":"stderr","time":3.81954917,"data":"subprocess.CalledProcessError: Command '['python', 'cloud_runner.py']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":6.400070347,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6.400097588,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6.766075215,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6.766123209,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8.663559691,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9.740739815,"data":"[NbConvertApp] Writing 274207 bytes to __results__.html\n"}
 ]

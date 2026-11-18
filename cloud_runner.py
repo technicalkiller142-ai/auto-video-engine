@@ -23,7 +23,7 @@ try:
                 shutil.copy2(src, Path("/kaggle/working") / fn)
 
     elif mode in ("sync_test", "render"):
-        video_dir = Path(".")
+        video_dir = Path("video")
         if not video_dir.exists():
             raise FileNotFoundError("video/ directory not found!")
         if not (video_dir / "node_modules").exists():
