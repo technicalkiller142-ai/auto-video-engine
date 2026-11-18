@@ -1,17 +1,22 @@
-[{"stream_name":"stderr","time":0.997723624,"data":"Cloning into 'auto-video-engine'...\n"}
-,{"stream_name":"stderr","time":1.9238725030000001,"data":"SyntaxError: Non-UTF-8 code starting with '\\xee' in file /kaggle/working/auto-video-engine/cloud_runner.py on line 5, but no encoding declared; see https://peps.python.org/pep-0263/ for details\n"}
-,{"stream_name":"stderr","time":1.938637462,"data":"Traceback (most recent call last):\n"}
-,{"stream_name":"stderr","time":1.939966172,"data":"  File \"/kaggle/src/script.py\", line 7, in \u003cmodule\u003e\n"}
-,{"stream_name":"stderr","time":1.9399873159999999,"data":"    subprocess.run([\"python\", \"cloud_runner.py\"], check=True)\n"}
-,{"stream_name":"stderr","time":1.939993008,"data":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stderr","time":1.939996805,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 578, in run\n"}
-,{"stream_name":"stderr","time":1.9400006109999999,"data":"    raise CalledProcessError(retcode, process.args,\n"}
-,{"stream_name":"stderr","time":1.940004455,"data":"                             output=stdout, stderr=stderr)\n"}
-,{"stream_name":"stderr","time":1.9400138550000001,"data":"subprocess.CalledProcessError: Command '['python', 'cloud_runner.py']' returned non-zero exit status 1.\n"}
-,{"stream_name":"stderr","time":4.393149212,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":4.3931813,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":4.741759999,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":4.741790613,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":6.417482382,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
-,{"stream_name":"stderr","time":7.435868322,"data":"[NbConvertApp] Writing 274207 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":0.789798542,"data":"Cloning into 'auto-video-engine'...\n"}
+,{"stream_name":"stdout","time":2.018931821,"data":"=== RUNNING STAGE : sync_test ===\n"}
+,{"stream_name":"stdout","time":2.018958614,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":2.018973012,"data":"  File \"/kaggle/working/auto-video-engine/cloud_runner.py\", line 28, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":2.018983642,"data":"    raise FileNotFoundError(\"video/ directory not found!\")\n"}
+,{"stream_name":"stdout","time":2.018986701,"data":"FileNotFoundError: video/ directory not found!\n"}
+,{"stream_name":"stdout","time":2.01898972,"data":"\n"}
+,{"stream_name":"stderr","time":2.031138321,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":2.03171267,"data":"  File \"/kaggle/src/script.py\", line 7, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":2.031723605,"data":"    subprocess.run([\"python\", \"cloud_runner.py\"], check=True)\n"}
+,{"stream_name":"stderr","time":2.03172947,"data":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":2.031734384,"data":"  File \"/usr/lib/python3.13/subprocess.py\", line 578, in run\n"}
+,{"stream_name":"stderr","time":2.03173895,"data":"    raise CalledProcessError(retcode, process.args,\n"}
+,{"stream_name":"stderr","time":2.031743139,"data":"                             output=stdout, stderr=stderr)\n"}
+,{"stream_name":"stderr","time":2.031761519,"data":"subprocess.CalledProcessError: Command '['python', 'cloud_runner.py']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":4.404746412,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4.404784739,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4.750999483,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4.751022581,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6.438493434,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":7.412046454,"data":"[NbConvertApp] Writing 274207 bytes to __results__.html\n"}
 ]
