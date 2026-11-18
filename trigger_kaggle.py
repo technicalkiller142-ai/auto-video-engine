@@ -49,6 +49,7 @@ def trigger():
 
     # 4. Poll status
     start_poll = time.time()
+    final_status = None
     while True:
         elapsed = int(time.time() - start_poll)
         update_status("running_gpu", f"Status: running... ({elapsed}s elapsed)", "Alignment")
@@ -56,17 +57,20 @@ def trigger():
 
         res = subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "status", "vinu07/autorenderworker"], capture_output=True, text=True)
         if "complete" in res.stdout.lower():
+            final_status = "complete"
             break
         if "error" in res.stdout.lower():
-            update_status("error", f"Kaggle execution failed: {res.stdout}", "Alignment", error_log=res.stdout)
-            print(f"[KAGGLE] Error: {res.stdout}")
-            return
+            final_status = "error"
+            break
         time.sleep(15)
 
-    # 5. Output
-    update_status("downloading", "Downloading outputs...", "Alignment")
+    # 5. ALWAYS download outputs (both complete and error)
+    update_status("downloading", f"Downloading outputs... (status: {final_status})", "Alignment")
     print("Downloading outputs...")
-    subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "output", "vinu07/autorenderworker", "-p", "./kaggle_out"], check=True)
+
+    out_result = subprocess.run([sys.executable, "-m", "kaggle.cli", "kernels", "output", "vinu07/autorenderworker", "-p", "./kaggle_out"], capture_output=True, text=True)
+    if out_result.returncode != 0:
+        print(f"Warning: output download partially failed: {out_result.stderr}")
 
     # Move files from kaggle_out to data/ and output/
     kaggle_out = REPO_DIR / "kaggle_out"
@@ -84,12 +88,19 @@ def trigger():
                 shutil.copy2(f, output_dir / f.name)
                 shutil.copy2(f, REPO_DIR / f.name)
                 print(f"Copied {f.name} to output/ and root")
-        
+
         # Handle Kaggle error report if present
         err_report = kaggle_out / "kaggle_error_report.json"
         if err_report.exists():
-            update_status("error", f"Kaggle job reported error: {err_report.read_text()}", "Alignment", error_log=err_report.read_text())
+            err_text = err_report.read_text()
+            update_status("error", f"Kaggle job reported error: {err_text}", "Alignment", error_log=err_text)
+            print(f"[KAGGLE ERROR REPORT] {err_text}")
             return
+
+    if final_status == "error":
+        update_status("error", f"Kaggle execution failed: {final_status}", "Alignment", error_log=f"Kernel status: {final_status}. See kaggle_out/ for logs.")
+        print("[KAGGLE] Job failed. Logs downloaded to kaggle_out/.")
+        return
 
     update_status("complete", "Files downloaded locally!", "Alignment")
     print("[DONE] Files downloaded locally!")
