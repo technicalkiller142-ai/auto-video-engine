@@ -2,6 +2,7 @@ import subprocess
 import os
 import time
 import json
+import shutil
 from pathlib import Path
 import setup_kaggle_auth
 
@@ -20,8 +21,6 @@ def update_status(status, message, stage="Alignment"):
         json.dump(data, f)
 
 def trigger():
-    start_time = time.time()
-
     # 1. Setup Auth
     setup_kaggle_auth.setup_kaggle()
 
@@ -34,7 +33,14 @@ def trigger():
     # 3. Push kernel
     update_status("pushing_kaggle", "Pushing Kaggle kernel...", "Alignment")
     print("[KAGGLE] Pushing kernel to vinu07/autorenderworker...")
-    subprocess.run(["kaggle", "kernels", "push", "-p", "./kaggle_kernel"], check=True)
+
+    result = subprocess.run(["kaggle", "kernels", "push", "-p", "./kaggle_kernel"], capture_output=True, text=True)
+
+    if result.returncode != 0:
+        error_msg = f"Kaggle push failed: {result.stderr} {result.stdout}"
+        update_status("error", error_msg, "Alignment")
+        print(f"[KAGGLE] {error_msg}")
+        return
 
     # 4. Poll status
     start_poll = time.time()
