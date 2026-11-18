@@ -22,10 +22,22 @@ def update_status(status, message, stage="Alignment"):
         json.dump(data, f)
 
 def bootstrap_and_run():
-    # 1. Check/Install Kaggle CLI
-    if not shutil.which("kaggle"):
-        print("Installing kaggle CLI...")
-        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "kaggle"], check=True)
+    # 1. Check/Install dependencies
+    needed_packages = ["six", "requests", "urllib3", "tqdm", "python-slugify", "kaggle"]
+    missing_packages = []
+    
+    for pkg in needed_packages:
+        pkg_name = "slugify" if pkg == "python-slugify" else pkg
+        try:
+            __import__(pkg_name)
+        except ImportError:
+            missing_packages.append(pkg)
+            
+    if missing_packages:
+        print(f"Installing missing packages: {', '.join(missing_packages)}...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q"] + missing_packages + ["--upgrade"], check=True)
+    else:
+        print("All dependencies already installed.")
 
     # 2. Setup Auth
     setup_kaggle_auth.setup_kaggle()
