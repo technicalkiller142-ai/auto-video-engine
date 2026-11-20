@@ -4,6 +4,15 @@ import os, re, sys, json, shutil, traceback, subprocess
 from pathlib import Path
 
 def run_cmd(cmd, cwd=None):
+    # Log the command and the current directory
+    print(f"DEBUG: Running command: {' '.join(cmd)} in {cwd}")
+    # Verify package.json exists in cwd
+    if cwd and os.path.exists(os.path.join(cwd, 'package.json')):
+        print(f"DEBUG: package.json FOUND in {cwd}")
+    else:
+        print(f"DEBUG: package.json NOT FOUND in {cwd}")
+        print(f"DEBUG: Contents of {cwd}: {os.listdir(cwd) if cwd else os.listdir('.')}")
+        
     res = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
     if res.returncode != 0:
         raise RuntimeError(f"Command failed {res.returncode}: {cmd}\nSTDOUT: {res.stdout[-1800:]}\nSTDERR: {res.stderr[-1800:]}")
@@ -13,6 +22,10 @@ try:
     task = json.loads(Path("pipeline_task.json").read_text(encoding="utf-8")) if Path("pipeline_task.json").exists() else {"mode": "sync_test"}
     mode = task.get("mode", "sync_test")
     print(f"=== RUNNING STAGE : {mode} ===")
+
+    # Print current working directory
+    print(f"DEBUG: Current working directory: {os.getcwd()}")
+    print(f"DEBUG: Contents of root: {os.listdir('.')}")
 
     if mode == "align":
         subprocess.run([sys.executable, "-m", "pip", "install", "-q", "faster-whisper", "librosa", "soundfile"], check=False)
@@ -25,23 +38,35 @@ try:
                 shutil.copy2(src, Path("/kaggle/working") / fn)
 
     elif mode in ("sync_test", "render"):
-        # Fix: Use absolute path as it exists on Kaggle
-        video_dir = Path("/kaggle/working/auto-video-engine/video")
-        if not video_dir.exists():
-            # Fallback if path is different
-            video_dir = Path("video")
-            if not video_dir.exists():
-                raise FileNotFoundError(f"video/ directory not found!")
+        # Look for the video directory. The repo is cloned at /kaggle/working/auto-video-engine/
+        # So video/ should be at /kaggle/working/auto-video-engine/video/
+        
+        # Check all possible locations
+        potential_video_dirs = [
+            Path("/kaggle/working/auto-video-engine/video"),
+            Path("video"),
+            Path("../video"),
+            Path("/kaggle/working/video")
+        ]
+        video_dir = None
+        for p in potential_video_dirs:
+            if p.exists():
+                video_dir = p
+                print(f"DEBUG: Found video directory at {video_dir}")
+                break
+        
+        if not video_dir:
+            raise FileNotFoundError(f"video/ directory not found in any of {potential_video_dirs}")
         
         if not (video_dir / "node_modules").exists():
             run_cmd(["npm", "install", "--no-audit", "--no-fund", "--cache", "/tmp/npm-cache"], cwd=str(video_dir))
+        
         for fn in ["beat-map.json", "word-timestamps.json", "phrases.json", "visual-screenplay.json"]:
             src = Path("data") / fn
 
             if src.exists():
                 for sub in ["public", "src/data", "data", "."]:
                     dst = video_dir / sub / fn
-
                     dst.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(src, dst)
         if Path("input/song.mp3").exists():
