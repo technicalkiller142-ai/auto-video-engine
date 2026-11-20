@@ -25,9 +25,14 @@ try:
                 shutil.copy2(src, Path("/kaggle/working") / fn)
 
     elif mode in ("sync_test", "render"):
-        video_dir = Path(__file__).resolve().parent / "video"
+        # Fix: Use absolute path as it exists on Kaggle
+        video_dir = Path("/kaggle/working/auto-video-engine/video")
         if not video_dir.exists():
-            raise FileNotFoundError("video/ directory not found!")
+            # Fallback if path is different
+            video_dir = Path("video")
+            if not video_dir.exists():
+                raise FileNotFoundError(f"video/ directory not found!")
+        
         if not (video_dir / "node_modules").exists():
             run_cmd(["npm", "install", "--no-audit", "--no-fund", "--cache", "/tmp/npm-cache"], cwd=str(video_dir))
         for fn in ["beat-map.json", "word-timestamps.json", "phrases.json", "visual-screenplay.json"]:
@@ -46,7 +51,7 @@ try:
                 shutil.copy2(Path("input/song.mp3"), mp3_dst)
 
         root_tsx = video_dir / "src/Root.tsx"
-        comps = re.findall(r'id=["\']([^\"\']+)["\']', root_tsx.read_text(encoding="utf-8")) if root_tsx.exists() else []
+        comps = re.findall(r'id=["\']([^"\']+)["\']', root_tsx.read_text(encoding="utf-8")) if root_tsx.exists() else []
         print("FOUND COMPOSITIONS:", comps)
         if mode == "sync_test":
             comp = next((c for c in comps if "sync" in c.lower()), comps[0] if comps else "SyncTest")
